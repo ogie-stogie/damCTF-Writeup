@@ -19,7 +19,10 @@ For my method, I knew that I could curl for each page and then parse it for what
 export DAM_COUNT=0; while true; do export DAM_CTF_URL=$(curl -s https://finger-warmup.chals.damctf.xyz/$DAM_CTF_URL | cut -d'"' -f 2); curl -s https://finger-warmup.chals.damctf.xyz/$DAM_CTF_URL | grep dam; export DAM_COUNT=$(echo "$DAM_COUNT+1" | bc) ;echo $DAM_COUNT; done
 ```
 <br>
-From Matt's and my results, we could see that we had to iterate through 1000 pages before we were given the flag. Here is my result (the counter is off because I added a counter near the end of the run since it was taking a couple minutes, the last page was stored as a environment variable so I didn't lose progress thankfully):<br>
+<br>
+From Matt's and my results, we could see that we had to iterate through 1000 pages before we were given the flag. Here is my result:<br>
 <br>
 ![](https://github.com/tbart27/damCTF-Writeup/blob/main/web2.png)<br>
 <br>
+*The counter is off in the picture because I added a counter near the end of the run since it was taking a couple minutes. Luckily, the last page was stored as a environment variable so I didn't lose progress.<br>
+

@@ -37,6 +37,7 @@ Jack and I proceed to spend the majority of this CTF trying to overflow the buff
 <br>
 ![](https://github.com/tbart27/damCTF-Writeup/blob/main/pwn3.png)<br>
 <br>
-If we had more time, I would've continued testng for unsigned/signed error overflows and I would've continued to see if there was a workaround to build a rop-chain.<br>
+If we had more time, I would've continued testing for unsigned/signed error overflows and I would've continued to see if there was a workaround to build a rop-chain.<br>
 <br>
 ### Conclusion
+After this somewhat disappointing CTF, I realized that penetration software is becoming more prevalent in the challenges. In an unrelated project, I have installed open-jdk so I will be looking into installing Ghidra as a backup for when Binary ninja leads us to a dead end. Moreover learning pwndbg is still a work in progress, however it is becoming more manditory since regular GDB analysis is taking an exorbitant amount of time to perform. Lastly, I attempted malware/phase near the end of the CTF but had to use browser software since I didn't have wireshark (credit to John for reminding me about this software!) set up properly to analyze the pcapng file.
